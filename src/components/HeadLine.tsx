@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import { user } from '../data/user'
 import { delay } from '../middleware/module'
 

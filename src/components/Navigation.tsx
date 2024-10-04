@@ -1,4 +1,3 @@
-import React from 'react'
 import { user } from '../data/user'
 
 import '../styles/navigation.css'
