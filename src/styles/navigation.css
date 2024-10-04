@@ -1,0 +1,46 @@
+.navigation-bar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #070917;
+    align-items: center;
+    padding: 5px 5%;
+    justify-content: space-between;
+}
+
+.navigation-bar ul {
+  font-weight: bold;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-bar .wrapper ul li {
+  margin: 0 10px;
+}
+
+
+
+
+@keyframes gradientAnimation {
+    0%{
+        background: var(--gradient-step01);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }   
+
+    50% {
+        background: var(--gradient-step02);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: var(--gradient-step03);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
+}

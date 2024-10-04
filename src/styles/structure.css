@@ -1,0 +1,11 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 20px;
+    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    /* flex:  0; */
+    /* background-color: green; */
+}

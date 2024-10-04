@@ -1,0 +1,32 @@
+.head-line {
+    width: 100%;
+    padding: 0 1%;
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.head-line .image-burn {
+    mix-blend-mode:lighten;
+    width: 100%;
+}
+
+.head-line .main-column {
+    flex: 1 1 fit-content;
+    max-width: 50%;
+    min-width: 50%;
+    overflow-y: visible;
+    align-items: self-start;
+    position: relative;
+}
+
+.head-line .into-text {
+    font-size: calc(2.5vw + 40px);
+    align-items: center;
+    text-wrap: nowrap;
+    margin: auto;
+    margin: 0;
+}
