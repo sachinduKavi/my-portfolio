@@ -29,6 +29,14 @@
     .introduction .key-features-column {
         padding: 0;
         flex-direction: row;
-        justify-content: space-evenly;
+        width: 100%;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .introduction .features {
+        margin: 20px;
+        flex: 1 1 0;
     }
 }
