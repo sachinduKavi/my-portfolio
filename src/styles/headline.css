@@ -12,6 +12,7 @@
 .head-line .image-burn {
     mix-blend-mode:lighten;
     width: 100%;
+    align-self: flex-end;
 }
 
 .head-line .main-column {
