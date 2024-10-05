@@ -4,6 +4,10 @@ interface User {
     degree: string
     about: string
     describeWords: Array<string>
+    keyPoints: Array<{
+        count:number,
+        description: string
+    }>
 
 }
 
@@ -24,6 +28,20 @@ With a deep interest in Information and Communication Technology, particularly i
         'Tech Learner',
         'Engineer',
         'Frontend/Backend Developer'
+    ],
+    keyPoints: [
+        {
+            count: 2,
+            description: 'Years Experience'
+        },
+        {
+            count: 1,
+            description: 'Companies Worked'
+        },
+        {
+            count: 5,
+            description: 'Technologies'
+        }
     ]
 }
 

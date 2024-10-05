@@ -1,9 +1,34 @@
 .introduction {
     width: 100%;
-    min-height: 800px;
+    height: fit-content;
 }
 
 .introduction .intro-para {
     margin: 30px;
     font-size: calc(8px + 0.8vw);
+}
+
+.introduction .features {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.introduction .key-features-column {
+    align-items: flex-start;
+    padding-left: 20%;
+}
+
+@media only screen and (max-width: 800px) {
+    .introduction .intro-para {
+        margin: 0;
+        text-wrap: wrap;
+        font-size: 1.1rem;
+    }
+
+    .introduction .key-features-column {
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }

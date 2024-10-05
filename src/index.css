@@ -101,10 +101,23 @@ button:focus-visible {
 .column  {
   display: flex;
   flex-direction: column;
-  /* flex: 1 1 0; */
+  width: 49%;
   justify-content: center;
   align-items: center;
-  width: calc(50%);
+  /* width: 50%; */
+}
+
+@media only screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .column {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+  }
 }
 
 @media (prefers-color-scheme: light) {

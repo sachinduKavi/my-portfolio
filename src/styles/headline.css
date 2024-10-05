@@ -17,17 +17,36 @@
 
 .head-line .main-column {
     flex: 1 1 fit-content;
-    max-width: 50%;
-    min-width: 50%;
+    /* max-width: 50%;
+    min-width: 50%; */
     overflow-y: visible;
     align-items: self-start;
     position: relative;
 }
 
 .head-line .into-text {
-    font-size: calc(2.5vw + 40px);
+    font-size: calc(5.5vw + 15px);
     align-items: center;
     text-wrap: nowrap;
     margin: auto;
     margin: 0;
+}
+
+@media only screen and (max-width: 800px)  {
+    .head-line {
+        margin: 0;
+        height: 100vh;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .head-line .into-text {
+        padding: 5px;
+    }
+
+    .head-line .main-column {
+        margin: 0;
+        flex: 0 0 0;
+        width: 100%;
+    }
 }

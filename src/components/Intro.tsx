@@ -1,4 +1,5 @@
 import React from 'react'
+import { user } from '../data/user'
 
 import '../styles/intro.css'
 
@@ -10,8 +11,20 @@ export default function Intro() {
           With a deep interest in Information and Communication Technology, particularly in software engineering, I thrive on learning and exploring new technologies. I take a proactive approach to solving problems and continuously seek ways to enhance my skills, whether it’s through academic projects or hands-on assignments.</p>
         </div>
 
-        <div className="column">
-          <p>Hello</p>
+        <div className="column key-features-column">
+
+          {
+            user.keyPoints.map((element, index) => {
+              return (
+                <div className="features" key={index}>
+                  <h1 className='count text-gradient'>{element.count}+</h1>
+                  <p>{element.description}</p>
+                </div>
+              )
+            })
+          }
+
+
         </div>
     </div>
   )
