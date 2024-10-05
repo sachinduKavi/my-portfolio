@@ -1,5 +1,9 @@
 .introduction {
     width: 100%;
     min-height: 800px;
-    background-color: red;
+}
+
+.introduction .intro-para {
+    margin: 30px;
+    font-size: calc(8px + 0.8vw);
 }
