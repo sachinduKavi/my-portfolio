@@ -28,6 +28,7 @@
     font-size: calc(5.5vw + 15px);
     align-items: center;
     text-wrap: nowrap;
+    font-family: 'Raleway';
     margin: auto;
     margin: 0;
 }
