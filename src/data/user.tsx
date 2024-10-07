@@ -14,6 +14,12 @@ interface User {
         description: string,
         image: string,
         date: Date
+    }>,
+    timeline: Array<{
+        title: string,
+        description: string,
+        start: string,
+        end: string | null
     }>
 
 }
@@ -75,6 +81,64 @@ With a deep interest in Information and Communication Technology, particularly i
         },
 
         
+    ],
+
+    timeline: [
+        {
+            title: 'FOSS Technical Team',
+            description: 'A free and open-source community fosters collaboration, allowing anyone to use, modify, and improve software freely for the benefit of all.',
+            start: '2024',
+            end: null
+        },
+
+        {
+            title: 'Uva Xtreame Hackathon',
+            description: '',
+            start: '2024',
+            end: null
+        }, 
+
+        {
+            title: 'CST LAN Challenge',
+            description: '',
+            start: '2024',
+            end: null
+        },
+
+        {
+            title: 'Uva Wellassa University',
+            description: 'I have started my degree in Computer Science and Technology at Uva Wellassa University, with a passion for developing innovative software solutions.',
+            start: '2021',
+            end: 'present'
+        },
+
+        {
+            title: 'Negombo Municipal Council',
+            description: 'Worked as a Staff Assistant at the Negombo Municipal Council Engineering division.',
+            start: '2020',
+            end: '2022'
+        },
+
+        {
+            title: 'Advance Level',
+            description: 'I have completed my Advanced Level studies in the Physical Science stream from Maris Stella College.',
+            start: '2020',
+            end: null
+        },
+
+        {
+            title: 'National Victory Campus',
+            description: 'I have achieved a diploma in Information Communication Technology from Nation Victory Campus.',
+            start: '2017',
+            end: null
+        },
+
+        {
+            title: 'Ordinary Level',
+            description: 'I have completed my Ordinary Level studies from Maris Stella College.',
+            start: '2017',
+            end: null
+        }
     ]
 }
 
