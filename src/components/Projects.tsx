@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useRef} from 'react'
 import { user } from '../data/user'
 import VanillaTilt from 'vanilla-tilt'
 import {motion} from 'framer-motion'
@@ -9,6 +9,51 @@ import '../styles/projects.css'
 export default function Projects() {
 
   const projects = user.projects
+  const sliderRef = useRef(null)
+  let mousedown = false, startX = 0, scrollLeft = 0
+
+
+  const mousedownFunction = (e: Event) => {
+    mousedown = true
+    startX = e.pageX - sliderRef.current.offsetLeft // Calculate start point
+    scrollLeft = sliderRef.current.scrollLeft
+  }
+
+  const mouseupFunction = (e: Event) => {
+    mousedown = false
+  }
+
+  const mouseMoveFunction = (e: Event) => {
+    if(mousedown) {
+      const x = e.pageX - sliderRef.current.offsetLeft
+      const walk = (x - startX) 
+      sliderRef.current.scrollLeft = scrollLeft - walk
+    }
+  }
+
+
+  useEffect(() => {
+    // Set mousedown to false in the beginning 
+    mousedown = false
+    
+
+    document.addEventListener('mousedown', mousedownFunction)
+
+    document.addEventListener('mousemove', mouseMoveFunction)
+
+    document.addEventListener('mouseup', mouseupFunction)
+
+
+
+    return (() => {
+      document.removeEventListener('mousedown', mousedownFunction)
+
+      document.removeEventListener('mousemove', mouseMoveFunction)
+
+      document.removeEventListener('mouseup', mouseupFunction)
+    })
+
+  }, [])
 
 
   useEffect(() =>{
@@ -25,12 +70,12 @@ export default function Projects() {
       })
     }
     
-  })
+  }, [])
 
   return (
-    <>
-      <h2 className="title">Projects</h2>
-      <div className='projects-container'>
+    <div className='container'>
+      <h2 className="title text-gradient">Technical Projects</h2>
+      <div className='projects-container' ref={sliderRef}>
       
       {
         projects.map((element, index) => {
@@ -61,7 +106,7 @@ export default function Projects() {
     
     </div>
     
-    </>
+    </div>
     
   )
 }
