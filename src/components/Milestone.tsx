@@ -9,7 +9,7 @@ export default function Milestone(props: any) {
 
   return (
     <div className='timeline-wrapper'>
-        <h2 className="title text-gradient">Timeline</h2>
+        <h2 className="title text-gradient">Milestones</h2>
 
         <div className="timeline-slider">
           <div className="container">
@@ -26,6 +26,7 @@ export default function Milestone(props: any) {
                       <>
                         <motion.div className="upper"
                           initial={{y: -500, scale: 0}}
+                          animate={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
                           whileInView={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
                           viewport={{ once: true, amount: 0.5 }}
                         >
@@ -58,6 +59,7 @@ export default function Milestone(props: any) {
 
                           <motion.div className="bottom"
                           initial={{y: 500, scale: 0}}
+                          animate={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
                           whileInView={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
                           viewport={{ once: true, amount: 0.5 }}
                           >

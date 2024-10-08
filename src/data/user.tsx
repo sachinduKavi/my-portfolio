@@ -101,7 +101,14 @@ With a deep interest in Information and Communication Technology, particularly i
         {
             title: 'CST LAN Challenge',
             description: '',
-            start: '2024',
+            start: '2022',
+            end: null
+        },
+
+        {
+            title: 'HackX 2022',
+            description: 'Me & my team successfully secured a place in the top 10 finalists of the HackX App Development Competition in 2022',
+            start: '2022',
             end: null
         },
 
