@@ -12,7 +12,7 @@ export default interface User {
     projects: Array<{
         name: string,
         description: string,
-        image: string,
+        image: string | null,
         date: Date
     }>,
     timeline: Array<{
@@ -80,6 +80,20 @@ With a deep interest in Information and Communication Technology, particularly i
             date: new Date('2024-03-20')
         },
 
+        {
+            name: 'Divisional Budget Management System',
+            description: 'This desktop application is designed to streamline the management of divisional budgets for electronic items within the Negombo Municipal Council.',
+            date: new Date('2024-03-20'),
+            image: null
+        },
+
+        {
+            name: 'Fuel Management System',
+            description: 'In response to the past economic crisis in Sri Lanka, a fuel usage tracking system has been implemented by me for vehicles operated by the Negombo Municipal Council.',
+            date: new Date('2024-03-20'),
+            image: null
+        }
+
         
     ],
 
@@ -93,7 +107,7 @@ With a deep interest in Information and Communication Technology, particularly i
 
         {
             title: 'Uva Xtreame Hackathon',
-            description: '',
+            description: 'I served as the Technical Lead for for the Uva Xtreme Hackathon in 2024',
             start: '2024',
             end: null
         }, 
@@ -134,7 +148,7 @@ With a deep interest in Information and Communication Technology, particularly i
         },
 
         {
-            title: 'National Victory Campus',
+            title: 'Nation Victory Campus',
             description: 'I have achieved a diploma in Information Communication Technology from Nation Victory Campus.',
             start: '2017',
             end: null

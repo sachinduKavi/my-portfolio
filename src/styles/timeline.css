@@ -1,14 +1,14 @@
 .timeline-wrapper {
     width: 100%;
-    margin: 20px 0;
+    margin: 100px 0;
     display: flex;
     flex-direction: column;
 }
 
 .timeline-wrapper .timeline-slider {
     width: 100%;
-    height: 500px;
-    padding: 10px;
+    height: 700px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +21,7 @@
     width: fit-content;
     z-index: 0;
     height: 100%;
+    margin: 50px;
     position: relative;
     display: flex;
     flex-direction: row;
