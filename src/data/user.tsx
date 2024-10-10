@@ -56,6 +56,10 @@ With a deep interest in Information and Communication Technology, particularly i
         {
             count: 5,
             description: 'Technologies'
+        }, 
+        {
+            count: 15,
+            description: 'Projects'
         }
     ],
     projects: [

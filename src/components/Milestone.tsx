@@ -1,14 +1,15 @@
-import React from 'react'
-import {motion} from 'framer-motion'
+import React, {useRef} from 'react'
+import {motion, Variant} from 'framer-motion'
 
 import '../styles/timeline.css'
 
 export default function Milestone(props: any) {
 
   const timeline = props.timeline
+  const milestoneRef = useRef(null)
 
   return (
-    <div className='timeline-wrapper'>
+    <div className='timeline-wrapper' ref={milestoneRef}>
         <h2 className="title text-gradient">Milestones</h2>
 
         <div className="timeline-slider">
@@ -26,9 +27,9 @@ export default function Milestone(props: any) {
                       <>
                         <motion.div className="upper"
                           initial={{y: -500, scale: 0}}
-                          animate={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
+                          // animate={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
                           whileInView={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
-                          viewport={{ once: true, amount: 0.5 }}
+                          viewport={{once: true, amount: 0.8}}
                         >
                           <div className="milestone">
                             <div className="description">

@@ -3,6 +3,8 @@ import HeadLine from '../components/HeadLine'
 import Intro from '../components/Intro'
 import Projects from '../components/Projects'
 import Milestone from '../components/Milestone'
+import ContactMe from '../components/ContactMe'
+
 import User, {user} from '../data/user'
 
 
@@ -24,6 +26,8 @@ export default function Home() {
         <Projects/>
 
         <Milestone timeline={userValue.timeline}/>
+
+        <ContactMe/>
 
 
 
