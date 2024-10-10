@@ -27,9 +27,10 @@ export default function Milestone(props: any) {
                       <>
                         <motion.div className="upper"
                           initial={{y: -500, scale: 0}}
-                          // animate={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
+                          animate={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
                           whileInView={{y: 0, scale: 1, transition: {delay: index*0.1 + 0.5, duration: 0.5}}}
-                          viewport={{once: true, amount: 0.8}}
+                          viewport={{once: true, root: milestoneRef}}
+                          onViewportEnter={() => console.log('hello world vieew')}
                         >
                           <div className="milestone">
                             <div className="description">
