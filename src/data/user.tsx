@@ -1,3 +1,5 @@
+import { IconType } from "antd/es/notification/interface"
+
 export default interface User {
     name: string
     age: number
@@ -10,10 +12,19 @@ export default interface User {
     }>
 
     projects: Array<{
-        name: string,
-        description: string,
-        image: string | null,
+        name: string
+        description: string
+        image: string | null
         date: Date
+        more?: {
+            images: Array<string>,
+            detailedDescription: string | null,
+            linksList: Array<{
+                platform: string
+                icon: IconType | null | undefined
+                link: string
+            }>
+        }
     }>,
     timeline: Array<{
         title: string,

@@ -5,7 +5,6 @@ import '../styles/contact-me.css'
 
 export default function ContactMe() {
 
-    const Textarea = Input.TextArea
     const [form] = Form.useForm();
 
     const onFinish = (values: string) => {
@@ -16,7 +15,7 @@ export default function ContactMe() {
     <div className='container form-container'>
         <h2 className="title text-gradient">Contact Me</h2>
         
-        <div style={{ padding: '24px', maxWidth: '600px', margin: 'auto' }}>
+        <div style={{ padding: '24px 0', width: '95%'}} className='form-wrapper'>
       <Form
         form={form}
         layout="vertical"
@@ -34,7 +33,7 @@ export default function ContactMe() {
         <Form.Item
           label="Last Name"
           name="lastName"
-          rules={[{ required: true, message: 'Please enter your last name!' }]}
+          rules={[{message: 'Please enter your last name!' }]}
         >
           <Input placeholder="Enter your last name" />
         </Form.Item>
@@ -53,7 +52,7 @@ export default function ContactMe() {
         <Form.Item
           label="Contact Number"
           name="contactNumber"
-          rules={[{ required: true, message: 'Please enter your contact number!' }]}
+          rules={[{message: 'Please enter your contact number!' }]}
         >
           <Input placeholder="Enter your contact number" />
         </Form.Item>
