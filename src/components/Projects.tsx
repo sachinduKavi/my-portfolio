@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 
 import '../styles/projects.css'
 
-export default function Projects() {
+export default function Projects(props: any) {
 
   const projects = user.projects
   const sliderRef = useRef(null)
@@ -72,6 +72,13 @@ export default function Projects() {
     
   }, [])
 
+
+  // User click on the project
+  const projectClick = () => {
+    console.log('this is working')
+    props.setVisible(true)
+  }
+
   return (
     <div className='container'>
       <h2 className="title text-gradient">Technical Projects</h2>
@@ -81,6 +88,7 @@ export default function Projects() {
         projects.map((element, index) => {
           return (
             <div className="project-card"
+            onClick={projectClick}
             key={index}
             style={{
               background: `url('${element.image}')`,
