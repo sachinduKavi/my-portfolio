@@ -1,10 +1,71 @@
 .project-card .card {
     width: 70%;
-    height: 500px;
+    max-width: 90%;
+    overflow-y: auto;
+    height: fit-content;
     background-color: #0709175e;
     backdrop-filter: blur(6px);
     border-radius: 20px;
     border: 2px solid white;
     padding: 20px;
     -webkit-backdrop-filter: blur(6px);
+}
+
+.project-card .card-name {
+    font-size: calc(2vw + 10px);
+}
+
+.project-card .primary-image {
+    background-color: red;
+    width: 90%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.project-card .primary-image img {
+
+}
+
+.project-card .start-column {
+    justify-content: start;
+}
+
+.project-card .mini-images {
+    min-width: 23%;
+    max-width: 23%;
+    aspect-ratio: 1;
+    margin: 0 5px 5px 0;
+    background-color: blue;
+}
+
+.project-card .platform {
+    width: 100%;
+    margin: 5px;
+}
+
+.project-card .platform > .row {
+    justify-content: flex-start;
+    width: 100%;
+} 
+
+.project-card .platform h4 {
+    margin: 0 5px;
+    font-size: calc(10px + 0.5vw);
+}
+
+.project-card .detailed-description {
+    font-size: calc(0.5vw + 10px);
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .project-card .mobile-row {
+        flex-direction: row;
+    }
+
+    .project-card .card {
+        width: 95%;
+        max-height: 80%;
+    }
 }

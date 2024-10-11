@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from 'react'
 import { user } from '../data/user'
 import VanillaTilt from 'vanilla-tilt'
 import {motion} from 'framer-motion'
+import {Pressable} from 'react-native'
 
 
 import '../styles/projects.css'
@@ -88,7 +89,7 @@ export default function Projects(props: any) {
         projects.map((element, index) => {
           return (
             <div className="project-card"
-            onClick={projectClick}
+            onDoubleClick={projectClick}
             key={index}
             style={{
               background: `url('${element.image}')`,
