@@ -1,14 +1,16 @@
 import React, {useRef, useEffect} from 'react'
 import {GithubFilled} from '@ant-design/icons'
 import {motion} from 'framer-motion'
+import { UseDispatch, useSelector } from 'react-redux'
+import { AppDispatch, RootState } from '../redux/store'
 
 
 
 import '../styles/project-card.css'
 import '../styles/structure.css'
 
-export default function ProjectCard(props: any) {
-
+export default function ProjectCard(props: any) {   
+    const globalProject = useSelector((state: RootState) => state.project)
     const cardRef = useRef(null)
 
 
@@ -35,7 +37,7 @@ export default function ProjectCard(props: any) {
                 initial={{scale: 0}}
                 animate={{scale: 1}}
             >
-                <h2 className="card-name">Ride Buddy  - Carpooling (Mobile app)</h2> 
+                <h2 className="card-name">{globalProject.name}</h2> 
 
 
                 <div className="row">
@@ -73,6 +75,8 @@ export default function ProjectCard(props: any) {
                         </p>
               
                 </div>
+
+                <iframe width="350" height="350" src="https://www.youtube.com/embed/c-ptvXgUfdg?si=1ZeX0nfXfYCnm-kD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
                 
             </motion.div>

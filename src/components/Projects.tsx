@@ -2,12 +2,16 @@ import React, {useEffect, useRef} from 'react'
 import { user } from '../data/user'
 import VanillaTilt from 'vanilla-tilt'
 import {motion} from 'framer-motion'
-import {Pressable} from 'react-native'
+import {AppDispatch, RootState} from '../redux/store'
+import { setValue } from '../redux/project-slice'
+import { useSelector, useDispatch } from 'react-redux'
 
 
 import '../styles/projects.css'
 
 export default function Projects(props: any) {
+  const projectValue = useSelector((state: RootState) => state.project)
+  const dispatch: AppDispatch = useDispatch()
 
   const projects = user.projects
   const sliderRef = useRef(null)
@@ -30,6 +34,13 @@ export default function Projects(props: any) {
       const walk = (x - startX) 
       sliderRef.current.scrollLeft = scrollLeft - walk
     }
+  }
+
+
+  // Update the global project state 
+  const updateProjectGlobal = (project: any) => {
+    dispatch(setValue({...project, date: project.date.toISOString()}))
+    props.setVisible(true)
   }
 
 
@@ -74,12 +85,6 @@ export default function Projects(props: any) {
   }, [])
 
 
-  // User click on the project
-  const projectClick = () => {
-    console.log('this is working')
-    props.setVisible(true)
-  }
-
   return (
     <div className='container'>
       <h2 className="title text-gradient">Technical Projects</h2>
@@ -89,7 +94,7 @@ export default function Projects(props: any) {
         projects.map((element, index) => {
           return (
             <div className="project-card"
-            onDoubleClick={projectClick}
+            onDoubleClick={() => updateProjectGlobal(element)}
             key={index}
             style={{
               background: `url('${element.image}')`,
