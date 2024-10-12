@@ -78,7 +78,8 @@ With a deep interest in Information and Communication Technology, particularly i
             name: 'GPA Calculator',
             description: "Mobile application developed to support students' academic journeys. Our aim is to simplify the often-complex task of GPA calculation and management. This app provides a user-friendly solution that allows students to calculate and keep track of their GPA effortlessly.",
             image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/WhatsApp%20Image%202024-10-02%20at%2015.28.36_c1cb021e.jpg?alt=media&token=0e90fc0f-9fd3-44a9-b692-312e5735c4de',
-            date: new Date('2024-03-20')
+            date: new Date('2024-03-20'),
+            
         },
 
         {
