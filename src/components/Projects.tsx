@@ -44,16 +44,29 @@ export default function Projects(props: any) {
   }
 
 
+  const unmountEvents = () => {
+      document.removeEventListener('mousedown', mousedownFunction)
+
+      document.removeEventListener('mousemove', mouseMoveFunction)
+
+      document.removeEventListener('mouseup', mouseupFunction)  
+  }
+
+
   useEffect(() => {
     // Set mousedown to false in the beginning 
     mousedown = false
     
+    if(sliderRef.current?.clientWidth > 800) {
+      document.addEventListener('mousedown', mousedownFunction)
 
-    document.addEventListener('mousedown', mousedownFunction)
+      document.addEventListener('mousemove', mouseMoveFunction)
 
-    document.addEventListener('mousemove', mouseMoveFunction)
-
-    document.addEventListener('mouseup', mouseupFunction)
+      document.addEventListener('mouseup', mouseupFunction)
+    } else {
+      unmountEvents()
+    }
+    
 
 
 
@@ -96,6 +109,7 @@ export default function Projects(props: any) {
           return (
             <div className="project-card"
             onDoubleClick={() => updateProjectGlobal(element)}
+            onTouchEnd={() => updateProjectGlobal(element)}
             key={index}
             style={{
               background: `url('${element.image}')`,
