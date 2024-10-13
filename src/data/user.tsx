@@ -1,4 +1,6 @@
 import { IconType } from "antd/es/notification/interface"
+import {LinkedinFilled, GithubFilled} from '@ant-design/icons'
+import { ReactElement } from "react"
 
 export default interface User {
     name: string
@@ -15,15 +17,16 @@ export default interface User {
         name: string
         description: string
         image: string | null
-        date: Date
+        date: Date | string | null
         more?: {
             images: Array<string>,
             detailedDescription: string | null,
             linksList: Array<{
                 platform: string
-                icon: IconType | null | undefined
+                icon: ReactElement<any, any>
                 link: string
             }>
+            videos?: Array<string>
         }
     }>,
     timeline: Array<{
@@ -78,7 +81,32 @@ With a deep interest in Information and Communication Technology, particularly i
             name: 'GPA Calculator',
             description: "Mobile application developed to support students' academic journeys. Our aim is to simplify the often-complex task of GPA calculation and management. This app provides a user-friendly solution that allows students to calculate and keep track of their GPA effortlessly.",
             image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/WhatsApp%20Image%202024-10-02%20at%2015.28.36_c1cb021e.jpg?alt=media&token=0e90fc0f-9fd3-44a9-b692-312e5735c4de',
-            date: new Date('2024-03-20'),
+            date: '2024-03-20',
+            more: {
+                images: [
+                    
+                ],
+                detailedDescription: '',
+                linksList: [
+                    {
+                        platform: 'LinkedIn',
+                        link: 'https://www.linkedin.com/posts/sachindukavishka7070_happy-to-announce-the-new-app-released-on-activity-7195620718519177216-zQbc?utm_source=share&utm_medium=member_desktop',
+                        icon: <LinkedinFilled/>
+                    },
+
+                    {
+                        platform: 'GitHub frontend',
+                        link: 'https://github.com/sachinduKavi/GPA_Calculator.git',
+                        icon: <GithubFilled/>
+                    },
+
+                    {
+                        platform: 'GitHub backend',
+                        link: 'https://github.com/sachinduKavi/GpaCalculator_api.git',
+                        icon: <GithubFilled/>
+                    }
+                ] 
+            }
             
         },
 
@@ -86,27 +114,27 @@ With a deep interest in Information and Communication Technology, particularly i
             name: 'Ride Buddy Mobile App',
             description: 'RideBuddy is a mobile application designed to revolutionize the way you travel in Negombo and beyond. Developed using Java and Android Studio, RideBuddy connects you with like-minded individuals.',
             image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/WhatsApp%20Image%202024-10-02%20at%2014.13.44_be151c09.jpg?alt=media&token=a7325d78-0581-4c63-ab5e-1a4f28985175',
-            date: new Date('2024-03-20')
+            date: '2024-03-20'
         },
 
         {
             name: 'Tic Tak Toe Mobile Game',
             description: 'Tic Tak Toe mobile game developed using Flutter where 2 players can play and mark their score',
             image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/WhatsApp%20Image%202024-10-01%20at%2019.27.52_5852f167.jpg?alt=media&token=49974b53-4bfa-4f80-9992-eb0df3b340a7',
-            date: new Date('2024-03-20')
+            date: '2024-03-20'
         },
 
         {
             name: 'Divisional Budget Management System',
             description: 'This desktop application is designed to streamline the management of divisional budgets for electronic items within the Negombo Municipal Council.',
-            date: new Date('2024-03-20'),
+            date: '2024-03-20',
             image: null
         },
 
         {
             name: 'Fuel Management System',
             description: 'In response to the past economic crisis in Sri Lanka, a fuel usage tracking system has been implemented by me for vehicles operated by the Negombo Municipal Council.',
-            date: new Date('2024-03-20'),
+            date: '2024-03-20',
             image: null
         }
 

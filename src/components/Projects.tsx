@@ -39,7 +39,7 @@ export default function Projects(props: any) {
 
   // Update the global project state 
   const updateProjectGlobal = (project: any) => {
-    dispatch(setValue({...project, date: project.date.toISOString()}))
+    dispatch(setValue(project))
     props.setVisible(true)
   }
 

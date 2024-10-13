@@ -1,7 +1,8 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import {GithubFilled} from '@ant-design/icons'
 import {motion} from 'framer-motion'
-import { UseDispatch, useSelector } from 'react-redux'
+import { resetValues } from '../redux/project-slice'
+import { useDispatch, UseDispatch, useSelector } from 'react-redux'
 import { AppDispatch, RootState } from '../redux/store'
 
 
@@ -10,12 +11,24 @@ import '../styles/project-card.css'
 import '../styles/structure.css'
 
 export default function ProjectCard(props: any) {   
-    const globalProject = useSelector((state: RootState) => state.project)
+    const project = useSelector((state: RootState) => state.project)
+    const dispatch: AppDispatch = useDispatch()
     const cardRef = useRef(null)
+
+
+    // Set current display to the primary image of the project
+    const [display, setDisplay] = useState<{
+        image: boolean
+        id: string
+    }>({
+        image: true,
+        id: project.image ?? ''
+    })
 
 
     const checkClick = (e: any) => {
         if(!(cardRef.current?.contains(e.target)?? true)) {
+            dispatch(resetValues())
             props.setVisible(false)
         }
     }
@@ -37,13 +50,18 @@ export default function ProjectCard(props: any) {
                 initial={{scale: 0}}
                 animate={{scale: 1}}
             >
-                <h2 className="card-name">{globalProject.name}</h2> 
+                <h2 className="card-name">{project.name}</h2> 
 
 
                 <div className="row">
                     <div className="column">
                         <div className="primary-image">
-                            <img src="" alt="image" />
+                            {
+                                display.image 
+                                ? <img src={`${display.id}`} alt="image" />
+
+                                : null
+                            }
                         </div>
                     </div>
 
@@ -57,11 +75,20 @@ export default function ProjectCard(props: any) {
                         </div>
 
                         <div className="platform">
-                            <div className="row mobile-row">
-                                <GithubFilled/>
-                                <h4>Hit Hub: </h4>
-                                <a target='_blank' href="https://www.wendoj.codes/">https://www.wendoj.codes/</a>
-                            </div>
+
+                            {
+                                project.more?.linksList.map((element, index) => {
+                                    return (
+                                        <div className="row mobile-row" key={index}>
+                                            {element.icon}
+                                            <h4>{element.platform}: </h4>
+                                            <a target='_blank' href={`${element.link}`}>{element.link.slice(0, 50)}</a>
+                                        </div>
+                                    )
+                                })
+                            }
+
+                            
                             
                         </div>
                     </div>
@@ -76,7 +103,7 @@ export default function ProjectCard(props: any) {
               
                 </div>
 
-                <iframe width="350" height="350" src="https://www.youtube.com/embed/c-ptvXgUfdg?si=1ZeX0nfXfYCnm-kD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                
 
                 
             </motion.div>

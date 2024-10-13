@@ -35,12 +35,15 @@ const projectSlice = createSlice({
     initialState,
     reducers: {
         setValue: (state, action) => {
-            console.log(state, action)
             return {...state, ...action.payload}
+        },
+
+        resetValues: (state) => {
+            return initialState
         }
     }
 })
 
 
-export const {setValue} = projectSlice.actions
+export const {setValue, resetValues} = projectSlice.actions
 export default projectSlice.reducer
