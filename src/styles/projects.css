@@ -8,6 +8,11 @@
     /* background-color: red; */
 }
 
+.preview-info {
+    margin-left: 20px;
+    color: rgb(177, 177, 177);
+}
+
 .projects-container::-webkit-scrollbar {
     display: none;
 }

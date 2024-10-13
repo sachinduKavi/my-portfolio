@@ -96,7 +96,7 @@ With a deep interest in Information and Communication Technology, particularly i
                 ],
                 videos: [
                     'BPG3qaSogXQ',
-                    'I8CNAU3qrHA'
+                    '2_stkJaAXgE'
                 ],
                 detailedDescription: 'The GPA Calculator is a highly functional and user-friendly application developed using Flutter for the frontend and Node.js Express for the backend. Designed to assist students in calculating their Grade Point Average (GPA), the app allows users to input course details, grades, and credits with ease. The Flutter frontend ensures a responsive design across mobile and web platforms, featuring an intuitive course input form, real-time GPA calculation, and validation checks to enhance user experience. The app also supports dark and light modes, offering an accessible and interactive interface with smooth animations. On the backend, Node.js Express powers the server-side logic, providing secure and efficient GPA calculations through RESTful API endpoints. The backend processes the input data, performs weighted GPA calculations, and can be scaled to support a large number of users. The architecture also allows for optional database integration to store user data and GPA history. With a focus on performance, error handling, and extensibility, the GPA Calculator is a reliable and scalable tool for students to track their academic progress, with potential for future enhancements like custom grading scales and multiple grading schemes.',
                 linksList: [
