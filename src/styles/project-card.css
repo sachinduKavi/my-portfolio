@@ -2,6 +2,7 @@
     width: 70%;
     max-width: 90%;
     overflow-y: auto;
+    max-height: 95vh;
     height: fit-content;
     background-color: #0709175e;
     backdrop-filter: blur(6px);
@@ -11,19 +12,31 @@
     -webkit-backdrop-filter: blur(6px);
 }
 
+.project-card .card::-webkit-scrollbar {
+    display: none;
+}
+
 .project-card .card-name {
     font-size: calc(2vw + 10px);
 }
 
 .project-card .primary-image {
-    background-color: red;
     width: 90%;
     aspect-ratio: 1;
     overflow: hidden;
 }
 
 .project-card .primary-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* display: block; */
+}
 
+.project-card .mini-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-card .start-column {
@@ -31,11 +44,21 @@
 }
 
 .project-card .mini-images {
-    min-width: 23%;
-    max-width: 23%;
+    cursor: pointer;
+    position: relative;
+    min-width: 20%;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    max-width: 20%;
+    overflow: hidden;
     aspect-ratio: 1;
     margin: 0 5px 5px 0;
-    background-color: blue;
+}
+
+.project-card .mini-images .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: skew(-50%);
 }
 
 .project-card .platform {

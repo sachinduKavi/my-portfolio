@@ -14,6 +14,7 @@ interface Project {
             icon: IconType | null | undefined
             link: string
         }>
+        videos?: Array<string>
     }
 }
 

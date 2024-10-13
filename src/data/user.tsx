@@ -20,7 +20,7 @@ export default interface User {
         date: Date | string | null
         more?: {
             images: Array<string>,
-            detailedDescription: string | null,
+            detailedDescription?: string | null,
             linksList: Array<{
                 platform: string
                 icon: ReactElement<any, any>
@@ -84,9 +84,20 @@ With a deep interest in Information and Communication Technology, particularly i
             date: '2024-03-20',
             more: {
                 images: [
-                    
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140014.png?alt=media&token=56c08d36-d079-427b-9805-cf8fae84aeee',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140311.png?alt=media&token=fb07c451-aea9-4f17-ad68-96e8a73fc9df',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140321.png?alt=media&token=42d81607-d8f9-41e7-8cc6-e93a4fdde87a',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140330.png?alt=media&token=a6630183-a74d-40c3-8965-fd8a2b80a217',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140338.png?alt=media&token=85fea5c1-e68d-4b67-8b37-7fee7349cbcc',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140345.png?alt=media&token=1bced4e4-5a2c-4d99-9cc5-c435b962071c',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140351.png?alt=media&token=4ce8b1ce-96f1-4594-9fa2-d681783e935b',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140407.png?alt=media&token=35e4c981-9369-4caa-884b-d6972167b4b3',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fgpa-calculator%2FScreenshot%202024-10-13%20140413.png?alt=media&token=9234cb57-e684-473c-b51f-7a80f2925e98'
                 ],
-                detailedDescription: '',
+                videos: [
+                    'BPG3qaSogXQ'
+                ],
+                detailedDescription: 'The GPA Calculator is a highly functional and user-friendly application developed using Flutter for the frontend and Node.js Express for the backend. Designed to assist students in calculating their Grade Point Average (GPA), the app allows users to input course details, grades, and credits with ease. The Flutter frontend ensures a responsive design across mobile and web platforms, featuring an intuitive course input form, real-time GPA calculation, and validation checks to enhance user experience. The app also supports dark and light modes, offering an accessible and interactive interface with smooth animations. On the backend, Node.js Express powers the server-side logic, providing secure and efficient GPA calculations through RESTful API endpoints. The backend processes the input data, performs weighted GPA calculations, and can be scaled to support a large number of users. The architecture also allows for optional database integration to store user data and GPA history. With a focus on performance, error handling, and extensibility, the GPA Calculator is a reliable and scalable tool for students to track their academic progress, with potential for future enhancements like custom grading scales and multiple grading schemes.',
                 linksList: [
                     {
                         platform: 'LinkedIn',
