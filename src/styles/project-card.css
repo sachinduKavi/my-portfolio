@@ -58,7 +58,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: skew(-50%);
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 1;
+    transform: translateY(-50%) translateX(-50%);
 }
 
 .project-card .platform {

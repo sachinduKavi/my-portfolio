@@ -100,7 +100,7 @@ export default function ProjectCard(props: any) {
                                                 id: element
                                             })
                                         }}>
-                                            <div className='play-icon'><PlayCircleFilled size={500}/></div>
+                                            <div className='play-icon'><PlayCircleFilled style={{ fontSize: '48px', color: 'white' }}/></div>
                                             <img src={`https://img.youtube.com/vi/${element}/default.jpg`} alt="" />
                                             </div>
                                     )
