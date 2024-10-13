@@ -47,6 +47,11 @@
   box-sizing: border-box;
 }
 
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
 .component {
   width: 100%;
   height: fit-content;

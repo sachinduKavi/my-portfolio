@@ -12,6 +12,7 @@ export default function Navigation() {
             <li>About Me</li>
             <li>Projects</li>
             <li>My Services</li>
+            <li>Resume</li>
             <li>Contacts</li>
           </ul>
         </div>
