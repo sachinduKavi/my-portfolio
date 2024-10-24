@@ -111,9 +111,65 @@ Another key objective of the Treasury Management System is to facilitate collabo
 
         {
             name: 'Music Player',
-            description: '',
-            image: null,
-            date: '2024-10-12'
+            description: `The Music Streaming Application is
+            a digital platform developed using
+            Java to provide users with access to
+            a wide range of music content
+            through streaming. It aims to offer
+            a seamless and enjoyable music
+            listening experience for users across
+            various devices and platforms.
+            The rise of digital music
+            consumption has led to increased
+            demand for convenient and
+            accessible platforms for streaming
+            music. Our project aims to develop
+            a robust and user-friendly music
+            streaming application to cater to
+            this growing need.
+            music streaming applications have
+            become one of the fastestdeveloping
+            sectors in this industry.
+            Despite the high level of
+            competition in the field of music
+            streaming app development, there
+            is still much room for another great
+            music streaming app.`,
+            image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fmusic_player%2FScreenshot%202024-10-24%20225625.png?alt=media&token=36335d3a-0947-4bfd-af8b-ce569c50bd71',
+            date: '2024-10-12',
+            more: {
+                images: [
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fmusic_player%2FScreenshot%202024-10-24%20225611.png?alt=media&token=ff480862-7a47-4e07-b7c9-e44f28ca21eb',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fmusic_player%2FScreenshot%202024-10-24%20225639.png?alt=media&token=5f964113-d1e0-4e10-b269-32fdfd9e3eda',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fmusic_player%2FScreenshot%202024-10-24%20225650.png?alt=media&token=8b3d398b-714a-4956-b9d5-5d2f68501cc7',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fmusic_player%2FScreenshot%202024-10-24%20225706.png?alt=media&token=b7327382-2d1b-48d7-b246-5a39af604033'
+                ],
+                linksList: [],
+                detailedDescription: `The Music Streaming Application is
+                a digital platform developed using
+                Java to provide users with access to
+                a wide range of music content
+                through streaming. It aims to offer
+                a seamless and enjoyable music
+                listening experience for users across
+                various devices and platforms.
+                The rise of digital music
+                consumption has led to increased
+                demand for convenient and
+                accessible platforms for streaming
+                music. Our project aims to develop
+                a robust and user-friendly music
+                streaming application to cater to
+                this growing need.
+                music streaming applications have
+                become one of the fastest developing
+                sectors in this industry.
+                Despite the high level of
+                competition in the field of music
+                streaming app development, there
+                is still much room for another great
+                music streaming app.`
+            }
         },
 
         {
@@ -159,6 +215,25 @@ Another key objective of the Treasury Management System is to facilitate collabo
                 ] 
             }
             
+        },
+
+        {
+            name: 'Movie Theater',
+            description: 'This project aims to develop a simple movie theater website using PHP and HTML. The website will provide users with information about upcoming movies, showtimes, ticket prices, and allow them to purchase tickets online.',
+            image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Ftheater%2FScreenshot%202024-10-24%20231756.png?alt=media&token=ba3d0b6a-1b97-4c29-a5f8-c24057cebd06',
+            date: '2024-03-20',
+            more: {
+                images: [
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Ftheater%2FScreenshot%202024-10-24%20231835.png?alt=media&token=db336a86-a0e9-436f-b3b9-b931787f9a70',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Ftheater%2FScreenshot%202024-10-24%20231849.png?alt=media&token=c47dbe21-6592-41d8-b815-6117a5ec9e70',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Ftheater%2FScreenshot%202024-10-24%20231905.png?alt=media&token=181963bd-f341-4f19-9ed5-11639914fd9f',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Ftheater%2FScreenshot%202024-10-24%20231917.png?alt=media&token=5943f891-d91e-4e43-b91d-447806c3122f',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Ftheater%2FScreenshot%202024-10-24%20231930.png?alt=media&token=bdabe312-6736-4200-b135-3673fc399283',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Ftheater%2FScreenshot%202024-10-24%20231944.png?alt=media&token=4d5413dd-85ab-43a4-948e-80b7b25d1c90'
+                ],
+                detailedDescription: `A comprehensive movie theater website, built with PHP and HTML, can offer a seamless online experience for users. It provides essential features like movie listings, showtimes, ticket purchasing, and seat selection, while also incorporating advanced functionalities such as personalized recommendations, real-time seat availability, and social media integration. By prioritizing user experience, security, and performance, this website can become a valuable resource for movie enthusiasts and a successful platform for the theater business.`,
+                linksList: []
+            }
         },
 
         {
