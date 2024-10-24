@@ -99,8 +99,21 @@ With a deep interest in Information and Communication Technology, particularly i
                     'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fopen_ledger%2FScreenshot%202024-10-23%20175658.png?alt=media&token=a703866b-7a66-45d3-ae5c-833de4a862ab',
                     'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fopen_ledger%2FScreenshot%202024-10-23%20175710.png?alt=media&token=d5e39888-a88d-4e0d-aa82-c8c3b2e75819',
                 ],
+                detailedDescription: `The primary objective of the Treasury Management System is to promote financial transparency and efficiency by providing users with intuitive tools for managing their accounts, accessing treasury groups, and participating in budget estimation and distribution processes. By enabling users to create and modify their accounts securely, facilitating seamless communication within treasury groups, and generating customizable budget estimation reports, the Treasury Management System aims to empower users with the information and resources needed to make informed financial decisions. Additionally, by incorporating features for recording cash flow transactions and identifying potential fraud, the system further enhances transparency and accountability, fostering a culture of trust and integrity within the financial ecosystem.
+2. To Provide Facilitate Collaboration and Compliance
+Another key objective of the Treasury Management System is to facilitate collaboration and compliance among users and institutions through effective communication tools and auditing mechanisms. By providing notification systems and collaborative tools, such as announcements, chat discussions, and partnership functionalities with auditing firms, the Treasury Management System aims to streamline communication channels and promote collaboration among stakeholders. Additionally, by integrating a secure payment gateway and implementing robust auditing registration processes, the system ensures compliance with regulatory standards and safeguards against fraudulent activities, thereby enhancing the overall integrity and reliability of financial operations within the ecosystem.`,
+                videos: [
+                    'ec3ODumTg9g'
+                ],
                 linksList: []
             }
+        },
+
+        {
+            name: 'Music Player',
+            description: '',
+            image: null,
+            date: '2024-10-12'
         },
 
         {
