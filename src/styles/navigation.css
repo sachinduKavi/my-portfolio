@@ -14,6 +14,11 @@
     justify-content: space-between;
 }
 
+.navigation-bar a {
+    text-decoration: none;
+    color: white;
+}
+
 .navigation-bar ul {
   font-weight: bold;
   list-style-type: none;

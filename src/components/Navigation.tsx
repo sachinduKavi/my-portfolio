@@ -16,13 +16,13 @@ export default function Navigation() {
             <li onClick={() => {
               navigate('/')
             }}>Home</li>
-            <li>About Me</li>
-            <li>Projects</li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li>My Services</li>
             <li onClick={() => {
               navigate('/resume')
             }}>Resume</li>
-            <li>Contacts</li>
+            <li> <a href="#contacts">Contacts</a></li>
           </ul>
         </div>
     </div>

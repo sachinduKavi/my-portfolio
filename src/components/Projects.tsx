@@ -99,7 +99,7 @@ export default function Projects(props: any) {
 
 
   return (
-    <div className='container'>
+    <div className='container' id='projects'>
       <h2 className="title text-gradient">Technical Projects</h2>
       <p className='preview-info'>(Double click for project preview)</p>
       <div className='projects-container' ref={sliderRef}>

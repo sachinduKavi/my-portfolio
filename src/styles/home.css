@@ -5,8 +5,10 @@
     overflow: auto;
     flex-direction: column;
     position: relative;
+    scroll-behavior: smooth;
 }
 
-/* .home-page::-webkit-scrollbar {
+.home-page::-webkit-scrollbar {
     display: none;
-} */
+    scroll-behavior: smooth;
+}

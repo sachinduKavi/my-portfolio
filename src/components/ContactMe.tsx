@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
 import {Input, Button, Form} from 'antd'
+import database from '../modules/firebase';
+import {ref, set} from 'firebase/database'
+import {v4} from 'uuid'
 
 import '../styles/contact-me.css'
 
@@ -7,8 +10,10 @@ export default function ContactMe() {
 
     const [form] = Form.useForm();
 
-    const onFinish = (values: string) => {
-        console.log('Form Data: ', values);
+    const onFinish = (values: any) => {
+        console.log('Form Data: ', values, v4());
+        set(ref(database, 'message/' + v4()), values)
+        form.resetFields()
       };
 
   return (
@@ -17,10 +22,11 @@ export default function ContactMe() {
         
         <div style={{ padding: '24px 0', width: '95%'}} className='form-wrapper'>
       <Form
+      
         form={form}
         layout="vertical"
         onFinish={onFinish}
-        style={{ backgroundColor: '#333', padding: '24px', borderRadius: '8px' }}
+        style={{ backgroundColor: 'black', padding: '24px', borderRadius: '8px' }}
       >
         <Form.Item
           label="First Name"
