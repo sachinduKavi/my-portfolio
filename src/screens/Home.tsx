@@ -7,6 +7,7 @@ import Projects from '../components/Projects'
 import Milestone from '../components/Milestone'
 import ContactMe from '../components/ContactMe'
 import ProjectCard from '../components/ProjectCard'
+import Footer from '../components/Footer'
 
 import User, {user} from '../data/user'
 
@@ -31,6 +32,8 @@ export default function Home() {
         <Milestone timeline={userValue.timeline}/>
 
         <ContactMe/>
+
+        <Footer/>
 
         {
           projectVisibility && <ProjectCard setVisible={setProjectCardVisibility}/>
