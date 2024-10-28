@@ -237,6 +237,23 @@ Another key objective of the Treasury Management System is to facilitate collabo
         },
 
         {
+            name: "Bouncy ball - Mobile Game",
+            description: 'The Bouncy Ball Mobile Application is a fun, interactive game where players control a lively, bouncing ball, navigating it through various levels filled with obstacles and challenges. The objective is to keep the ball bouncing while avoiding obstacles and collecting points or rewards along the way.',
+            image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0043.jpg?alt=media&token=5627c4d3-f168-4a97-9c6a-1e1e3bae36d0',
+            date: '2024-03-20',
+            more: {
+                detailedDescription: `The Bouncy Ball Mobile Application, created using Flutter, is a dynamic and enjoyable game where players control a bouncing ball through levels filled with obstacles and rewards. Flutter's powerful UI capabilities enable smooth controls, vibrant graphics, and an immersive experience, making the app both visually appealing and responsive across devices. With progressively challenging levels, the game offers an engaging experience ideal for casual gameplay.`,
+                linksList: [],
+                images: [
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0040.jpg?alt=media&token=ae9c7cad-9526-42d4-bf41-849ed4302e26',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0041.jpg?alt=media&token=8f91fdf8-b00a-4583-bd28-0f7bfbcd55a8',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0042.jpg?alt=media&token=c8e228cd-45c6-4993-8fac-c9d1e027628c',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0044.jpg?alt=media&token=21f68a68-cc35-4cb7-b757-d130c6a47207'
+                ]                
+            }
+        },
+
+        {
             name: 'Ride Buddy Mobile App',
             description: 'RideBuddy is a mobile application designed to revolutionize the way you travel in Negombo and beyond. Developed using Java and Android Studio, RideBuddy connects you with like-minded individuals.',
             image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/WhatsApp%20Image%202024-10-02%20at%2014.13.44_be151c09.jpg?alt=media&token=a7325d78-0581-4c63-ab5e-1a4f28985175',
