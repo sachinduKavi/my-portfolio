@@ -81,7 +81,7 @@ With a deep interest in Information and Communication Technology, particularly i
             name: 'Open Ledger',
             description: 'Develop a secure, web-based Treasury Management System that revolutionizes financial transparency and empowers all organizations, from government entities to private businesses, with real-time visibility, robust controls, and collaborative tools to combat fraud and ensure efficient financial operations.',
             date: '2024-03-20',
-            image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fopen_ledger%2FScreenshot%202024-10-23%20175546.png?alt=media&token=c8e98796-49ff-4b90-8661-e13b0bf5d7be',
+            image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fopen_ledger%2Flinkdn%20project%201%20(9).png?alt=media&token=3d6cdff3-89b5-4db1-a0b0-a224a73679b1',
             more: {
                 images: [
                     'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fopen_ledger%2FScreenshot%202024-10-23%20175356.png?alt=media&token=081aa393-7f12-45b6-a329-e0497e16862a',
@@ -103,7 +103,8 @@ With a deep interest in Information and Communication Technology, particularly i
 2. To Provide Facilitate Collaboration and Compliance
 Another key objective of the Treasury Management System is to facilitate collaboration and compliance among users and institutions through effective communication tools and auditing mechanisms. By providing notification systems and collaborative tools, such as announcements, chat discussions, and partnership functionalities with auditing firms, the Treasury Management System aims to streamline communication channels and promote collaboration among stakeholders. Additionally, by integrating a secure payment gateway and implementing robust auditing registration processes, the system ensures compliance with regulatory standards and safeguards against fraudulent activities, thereby enhancing the overall integrity and reliability of financial operations within the ecosystem.`,
                 videos: [
-                    'ec3ODumTg9g'
+                    'ec3ODumTg9g',
+                    'yqqtGps6ktU'
                 ],
                 linksList: []
             }
@@ -232,7 +233,9 @@ Another key objective of the Treasury Management System is to facilitate collabo
                     'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Ftheater%2FScreenshot%202024-10-24%20231944.png?alt=media&token=4d5413dd-85ab-43a4-948e-80b7b25d1c90'
                 ],
                 detailedDescription: `A comprehensive movie theater website, built with PHP and HTML, can offer a seamless online experience for users. It provides essential features like movie listings, showtimes, ticket purchasing, and seat selection, while also incorporating advanced functionalities such as personalized recommendations, real-time seat availability, and social media integration. By prioritizing user experience, security, and performance, this website can become a valuable resource for movie enthusiasts and a successful platform for the theater business.`,
-                linksList: []
+                linksList: [
+                    
+                ]
             }
         },
 
@@ -243,12 +246,27 @@ Another key objective of the Treasury Management System is to facilitate collabo
             date: '2024-03-20',
             more: {
                 detailedDescription: `The Bouncy Ball Mobile Application, created using Flutter, is a dynamic and enjoyable game where players control a bouncing ball through levels filled with obstacles and rewards. Flutter's powerful UI capabilities enable smooth controls, vibrant graphics, and an immersive experience, making the app both visually appealing and responsive across devices. With progressively challenging levels, the game offers an engaging experience ideal for casual gameplay.`,
-                linksList: [],
+                linksList: [
+                    {
+                        platform: 'LinkedIn',
+                        link: 'https://www.linkedin.com/posts/sachindukavishka7070_flutter-mobilegame-uiux-activity-7184806234892505089-ZnkC?utm_source=share&utm_medium=member_desktop',
+                        icon: <LinkedinFilled/>
+                    },
+
+                    {
+                        platform: 'GitHub',
+                        link: 'https://github.com/sachinduKavi/bouncy-ball.git',
+                        icon: <GithubFilled/>
+                    }
+                ],
                 images: [
                     'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0040.jpg?alt=media&token=ae9c7cad-9526-42d4-bf41-849ed4302e26',
                     'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0041.jpg?alt=media&token=8f91fdf8-b00a-4583-bd28-0f7bfbcd55a8',
                     'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0042.jpg?alt=media&token=c8e228cd-45c6-4993-8fac-c9d1e027628c',
                     'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fbouncy_ball%2FIMG-20241028-WA0044.jpg?alt=media&token=21f68a68-cc35-4cb7-b757-d130c6a47207'
+                ],
+                videos: [
+                    'tFdGiNaHWdU'
                 ]                
             }
         },
