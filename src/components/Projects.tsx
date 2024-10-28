@@ -97,6 +97,23 @@ export default function Projects(props: any) {
     
   }, [])
 
+  
+  let elementHolder: Array<string> = []  
+  // Implementing double click for the 
+  const onClickDouble = (element: any) => {
+    for(const item of elementHolder) {
+      if(item === element.name) {
+        updateProjectGlobal(element)
+        break
+      }
+    }
+    elementHolder.push(element.name)
+
+    setTimeout(()=> {
+      elementHolder = []
+    }, 300)
+  }
+
 
   return (
     <div className='container' id='projects'>
@@ -109,7 +126,7 @@ export default function Projects(props: any) {
           return (
             <div className="project-card"
             onDoubleClick={() => updateProjectGlobal(element)}
-            onTouchEnd={() => updateProjectGlobal(element)}
+            onTouchStart={() => onClickDouble(element)}
             key={index}
             style={{
               background: `url('${element.image}')`,
