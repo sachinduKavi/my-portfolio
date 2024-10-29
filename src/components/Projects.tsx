@@ -99,7 +99,7 @@ export default function Projects(props: any) {
 
   
   let elementHolder: Array<string> = []  
-  // Implementing double click for the 
+  // Implementing double click for the mobile view
   const onClickDouble = (element: any) => {
     for(const item of elementHolder) {
       if(item === element.name) {

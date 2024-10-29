@@ -52,7 +52,6 @@ With a deep interest in Information and Communication Technology, particularly i
         'React Developer',
         'Flutter Developer',
         'Software Creator',
-        'Tech Learner',
         'Engineer',
         'Frontend Developer',
         'Backend Developer',
