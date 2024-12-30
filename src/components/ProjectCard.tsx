@@ -76,7 +76,7 @@ export default function ProjectCard(props: any) {
                                         }}><img src={`${project.image}`} alt="" /></div>
 
                             {
-                                project.more?.images.map((element, index) => {
+                                project.more?.images?.map((element, index) => {
                                     return (
                                         <div className="mini-images" key={index} onClick={() => {
                                             setDisplay({
@@ -111,7 +111,7 @@ export default function ProjectCard(props: any) {
                         <div className="platform">
 
                             {
-                                project.more?.linksList.map((element, index) => {
+                                project.more?.linksList?.map((element, index) => {
                                     return (
                                         <div className="row mobile-row" key={index}>
                                             {element.icon}
@@ -130,11 +130,7 @@ export default function ProjectCard(props: any) {
 
                 <div className="row">
                  
-                        <p className="detailed-description">
-                            {
-                                project.more?.detailedDescription ?? project.description
-                            }
-                        </p>
+                        <p className="detailed-description" dangerouslySetInnerHTML={{__html: project.more?.detailedDescription ?? project.description}}></p>
               
                 </div>
 

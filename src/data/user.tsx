@@ -1,5 +1,5 @@
 import { IconType } from "antd/es/notification/interface"
-import {LinkedinFilled, GithubFilled} from '@ant-design/icons'
+import {LinkedinFilled, GithubFilled, DeploymentUnitOutlined} from '@ant-design/icons'
 import { ReactElement } from "react"
 
 export default interface User {
@@ -39,6 +39,7 @@ export default interface User {
 }
 
 const user : User = {
+
     name: "Sachindu Kavishka",
     age: 23,
     degree: "Computer Science",
@@ -76,6 +77,39 @@ With a deep interest in Information and Communication Technology, particularly i
         }
     ],
     projects: [
+        {
+            name: 'Sabari Holdings',
+            description: 'This project, undertaken through our startup Softdetriods, was designed to create a comprehensive digital platform for Sabari Holding. The goal was to establish a robust online presence, streamline e-commerce operations.',
+            image: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fsabariholdings%2FScreenshot%202024-12-31%20001543.png?alt=media&token=b59335f7-cdef-42b0-85f2-7e7887bbf40e',
+            date: '2023-10-12',
+            more: {
+                images: [
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fsabariholdings%2FScreenshot%202024-12-31%20001559.png?alt=media&token=ea1f6590-c40d-401c-9929-c65b503bf286',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fsabariholdings%2FScreenshot%202024-12-31%20001610.png?alt=media&token=3b1e15c3-a491-43bc-bfa5-46e613a7136a',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fsabariholdings%2FScreenshot%202024-12-31%20001636.png?alt=media&token=a6ec7947-aae8-4e8c-ae85-0c8b9522d41d',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fsabariholdings%2FScreenshot%202024-12-31%20001647.png?alt=media&token=cc79cee4-e297-4ec4-badc-11e4afc48b6d',
+                    'https://firebasestorage.googleapis.com/v0/b/myportfolio-ee5f2.appspot.com/o/images%2Fsabariholdings%2FScreenshot%202024-12-31%20001659.png?alt=media&token=87e4eada-98dc-48a9-aa1f-af4c5c3f3881',
+
+                ],
+                videos: [
+                    'U9isXl4P9Uo'
+                ],
+                detailedDescription: `
+                <p>This project, undertaken through our startup Softdetriods, was designed to create a comprehensive digital platform for Sabari Holding. The goal was to establish a robust online presence, streamline e-commerce operations, and provide a seamless user experience for both customers and administrators</p>
+<p><strong>Landing Page:</strong><br />An aesthetically designed front page to introduce Sabari Holding&rsquo;s unique value proposition. It features intuitive navigation, shop highlights, and essential information, such as store hours, location, and featured</p>
+<p><br /><strong>Shop Portal:</strong><br />A dynamic e-commerce portal enabling customers to browse categorized products, view detailed product pages, and complete secure purchases. Features include add-to-cart functionality, secure checkout forms, and a streamlined user experience.<br /><br /><strong>Admin Panel:</strong><br />A user-friendly back-end interface for the company to efficiently manage their product inventory, track orders, and review sales history. This ensures operational efficiency and quick updates to the product catalog.<br /><br /><strong>Order Notifications:</strong><br />Real-time email notifications for order placements, ensuring Sabari Holding is promptly informed about customer activities and order details.<br /><br /><strong>About Us Page:</strong><br />A dedicated section providing insight into the company&rsquo;s mission, history, and contact details, along with links to social media platforms to build customer trust and engagement.<br /><br /><strong>Technologies and Tools:</strong><br /><em>Frontend</em>: React.js for building a responsive and interactive user interface, styled with Tailwind CSS for modern, efficient design.<br /><em>Backend</em>: Node.js and Express.js for creating a scalable and secure server-side application.&lt;/br&gt;<br /><em>Database</em>: MongoDB for handling dynamic product and order data.</p>
+
+                `,
+                linksList: [
+                    {
+                        icon: <DeploymentUnitOutlined/>,
+                        link: 'https://sabariholdings.com/',
+                        platform: 'Demo'
+                    }
+                ]
+            }
+        },
+
         {
             name: 'Open Ledger',
             description: 'Develop a secure, web-based Treasury Management System that revolutionizes financial transparency and empowers all organizations, from government entities to private businesses, with real-time visibility, robust controls, and collaborative tools to combat fraud and ensure efficient financial operations.',
