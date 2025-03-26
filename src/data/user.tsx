@@ -337,6 +337,12 @@ Another key objective of the Treasury Management System is to facilitate collabo
 
     timeline: [
         {
+            title: "Webmaster IEEE Student Branch",
+            description: 'Proud to serve as the Webmaster of IEEE Student Branch!',
+            start: '2025',
+            end: null
+        },
+        {
             title: 'FOSS Technical Team',
             description: 'A free and open-source community fosters collaboration, allowing anyone to use, modify, and improve software freely for the benefit of all.',
             start: '2024',
