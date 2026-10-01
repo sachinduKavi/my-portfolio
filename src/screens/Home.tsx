@@ -1,46 +1,34 @@
-import { useState } from 'react'
-
-import Navigation from '../components/Navigation'
-import HeadLine from '../components/HeadLine'
-import Intro from '../components/Intro'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import Hero from '../components/Hero'
+import About from '../components/About'
+import Experience from '../components/Experience'
+import Skills from '../components/Skills'
 import Projects from '../components/Projects'
-import Milestone from '../components/Milestone'
-import ContactMe from '../components/ContactMe'
-import ProjectCard from '../components/ProjectCard'
-import Footer from '../components/Footer'
-
-import User, {user} from '../data/user'
-
-
-import '../styles/home.css'
+import Research from '../components/Research'
+import Journey from '../components/Journey'
+import Contact from '../components/Contact'
 
 export default function Home() {
+  const { hash } = useLocation()
 
-  const userValue: User = user
-  const [projectVisibility, setProjectCardVisibility] = useState(false)
+  // Support links like /#projects coming from other routes
+  useEffect(() => {
+    if (!hash) return
+    const el = document.getElementById(hash.slice(1))
+    if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
+  }, [hash])
 
   return (
-    <div className='home-page'>
-        <Navigation/>
-
-        <HeadLine/>
-
-        <Intro/>
-
-        <Projects setVisible={setProjectCardVisibility}/>
-
-        <Milestone timeline={userValue.timeline}/>
-
-        <ContactMe/>
-
-        <Footer/>
-
-        {
-          projectVisibility && <ProjectCard setVisible={setProjectCardVisibility}/>
-        }
-        
-
-
-    </div>
+    <main>
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Research />
+      <Journey />
+      <Contact />
+    </main>
   )
 }

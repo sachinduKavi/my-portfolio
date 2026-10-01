@@ -1,13 +1,18 @@
-import React from 'react'
-
-
-import '../styles/footer.css'
+import { GithubFilled, LinkedinFilled, MailFilled, ArrowUpOutlined } from '@ant-design/icons'
+import { profile } from '../data/profile'
 
 export default function Footer() {
   return (
-    <div className='container footer'>
-        <center>Design and Developed By Sachindu Kavishka</center>
-        <center><a href="sachindu38@gmail.com">sachindu38@gmail.com</a></center>
-    </div>
+    <footer className="footer">
+      <div className="footer-inner">
+        <span>© {new Date().getFullYear()} {profile.name} · Designed & built with React + Three.js</span>
+        <div className="socials">
+          <a href={profile.links.github} target="_blank" rel="noreferrer" aria-label="GitHub"><GithubFilled /></a>
+          <a href={profile.links.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><LinkedinFilled /></a>
+          <a href={`mailto:${profile.email}`} aria-label="Email"><MailFilled /></a>
+          <a href="#home" aria-label="Back to top"><ArrowUpOutlined /></a>
+        </div>
+      </div>
+    </footer>
   )
 }
