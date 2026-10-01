@@ -1287,14 +1287,20 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   padding: 0 var(--gutter);
   user-select: none;
-  line-height: 0.8;
+  container-type: inline-size; /* lets the word scale to the footer's width, not the viewport's */
 }
 
 .footer-name span {
   display: block;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(3.4rem, 17vw, 15.5rem);
+  /* "SACHINDU" is ~4.5em wide, so 20cqi fills ~90% of the container and can never overflow it */
+  font-size: clamp(2.6rem, 14vw, 15rem);
+  font-size: min(20cqi, 15rem);
+  /* Box must be taller than the glyphs, because the gradient is only painted inside it */
+  line-height: 1.15;
+  padding: 0 0.05em;
+  margin-bottom: -0.2em; /* letters still sink into the bottom bar's border */
   letter-spacing: -0.04em;
   text-align: center;
   color: transparent;
@@ -1302,7 +1308,6 @@ h1, h2, h3, h4 {
   background: radial-gradient(circle 220px at var(--mx) var(--my), rgba(34, 211, 238, 0.95), rgba(167, 139, 250, 0.6) 40%, transparent 70%);
   -webkit-background-clip: text;
   background-clip: text;
-  transform: translateY(14%);
 }
 
 @media (hover: none) {
