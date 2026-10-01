@@ -3,8 +3,9 @@ import { GithubFilled, LinkedinFilled, MailFilled, EnvironmentOutlined, Download
 import { profile } from '../data/profile'
 import { useTypewriter } from './ui/useTypewriter'
 import cvUrl from '../assets/documents/CV_V11.pdf?url'
+import { INTRO_DELAY } from './effects/intro'
 
-const container = { hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.2 } } }
+const container = { hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: INTRO_DELAY } } }
 const item = {
   hidden: { opacity: 0, y: 30, filter: 'blur(8px)' },
   show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },

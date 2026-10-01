@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useRef, useState, MouseEvent } from 'react'
+import { Fragment, ReactNode, useEffect, useRef, useState, MouseEvent } from 'react'
 import { animate, motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion'
 
 export function Reveal({ children, delay = 0, y = 40, className }: { children: ReactNode; delay?: number; y?: number; className?: string }) {
@@ -17,12 +17,51 @@ export function Reveal({ children, delay = 0, y = 40, className }: { children: R
 }
 
 export function SectionHeading({ eyebrow, title, subtitle }: { eyebrow: string; title: string; subtitle?: string }) {
+  const words = title.split(' ')
   return (
-    <Reveal className="section-heading">
-      <span className="eyebrow">{eyebrow}</span>
-      <h2>{title}</h2>
-      {subtitle && <p>{subtitle}</p>}
-    </Reveal>
+    <motion.div
+      className="section-heading"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: '-60px' }}
+      transition={{ staggerChildren: 0.06 }}
+    >
+      <motion.span
+        className="eyebrow"
+        variants={{ hidden: { opacity: 0, x: -20 }, show: { opacity: 1, x: 0, transition: { duration: 0.6 } } }}
+      >
+        {eyebrow}
+      </motion.span>
+      {/* Each word slides up from behind a mask */}
+      <h2 aria-label={title}>
+        {words.map((w, i) => (
+          <Fragment key={i}>
+            <span className="word-mask" aria-hidden="true">
+              <motion.span
+                className="word"
+                variants={{
+                  hidden: { y: '110%', rotate: 6 },
+                  show: { y: '0%', rotate: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+                }}
+              >
+                {w}
+              </motion.span>
+            </span>
+            {/* Space lives outside the mask, where inline-block would otherwise swallow it */}
+            {i < words.length - 1 && ' '}
+          </Fragment>
+        ))}
+      </h2>
+      <motion.span
+        className="heading-line"
+        variants={{ hidden: { scaleX: 0 }, show: { scaleX: 1, transition: { duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] } } }}
+      />
+      {subtitle && (
+        <motion.p variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 0.25 } } }}>
+          {subtitle}
+        </motion.p>
+      )}
+    </motion.div>
   )
 }
 

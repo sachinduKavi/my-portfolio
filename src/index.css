@@ -823,17 +823,6 @@ h1, h2, h3, h4 {
     #0d0f22;
 }
 
-.cover-initials {
-  position: relative;
-  z-index: 1;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 4rem;
-  color: rgba(255, 255, 255, 0.92);
-  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  transform: translateZ(40px);
-}
-
 .cover-grid {
   position: absolute;
   inset: -50%;

@@ -137,7 +137,15 @@ function Core({ mobile }: { mobile: boolean }) {
       ].map(([x, y, z, color], i) => (
         <Float key={i} speed={3 + i} rotationIntensity={3} floatIntensity={2}>
           <Octahedron args={[0.16 + i * 0.03]} position={[x as number, y as number, z as number]}>
-            <meshStandardMaterial color={color as string} emissive={color as string} emissiveIntensity={0.8} />
+            {/* Faceted + metallic so each face catches the coloured lights differently */}
+            <meshStandardMaterial
+              color={color as string}
+              emissive={color as string}
+              emissiveIntensity={0.18}
+              metalness={0.55}
+              roughness={0.25}
+              flatShading
+            />
           </Octahedron>
         </Float>
       ))}

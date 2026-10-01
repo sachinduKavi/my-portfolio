@@ -1,9 +1,15 @@
 import { useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
-import { ArrowRightOutlined } from '@ant-design/icons'
+import { ArrowRightOutlined, CodeOutlined, ScanOutlined, ShopOutlined } from '@ant-design/icons'
 import { Project, projects } from '../data/profile'
 import { Reveal, SectionHeading, TiltCard } from './ui/primitives'
 import ProjectModal from './ProjectModal'
+
+// Icon shown on generated covers for projects without screenshots
+const coverIcons: Record<string, JSX.Element> = {
+  'QR Flash': <ShopOutlined />,
+  'Cognito ERP': <ScanOutlined />,
+}
 
 const palettes = [
   ['#22d3ee', '#6d28d9'],
@@ -20,8 +26,15 @@ function Cover({ project, index }: { project: Project; index: number }) {
   const [a, b] = palettes[index % palettes.length]
   return (
     <div className="project-cover generated" style={{ '--a': a, '--b': b } as never}>
-      <span className="cover-initials">{project.name.split(' ').map((w) => w[0]).join('').slice(0, 2)}</span>
       <span className="cover-grid" />
+      <span className="cover-orb" />
+      {/* Mini "app window" floating above the grid */}
+      <span className="cover-window">
+        <span className="cover-dots"><i /><i /><i /></span>
+        <span className="cover-icon">{coverIcons[project.name] ?? <CodeOutlined />}</span>
+        <span className="cover-title">{project.name}</span>
+        <span className="cover-lines"><i /><i /><i /></span>
+      </span>
     </div>
   )
 }
