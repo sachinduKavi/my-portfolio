@@ -106,7 +106,13 @@ export default function Contact() {
               {status === 'sending' ? 'Sending…' : <>Send message <SendOutlined /></>}
             </button>
             {status === 'sent' && <p className="form-note success">Thanks! Your message has been sent — I'll get back to you soon.</p>}
-            {status === 'error' && <p className="form-note error">Something went wrong. Please email me directly at {profile.email}.</p>}
+            {status === 'error' && (
+              <p className="form-note error">
+                Couldn't send the message{error ? ` (${error})` : ''}.{' '}
+                <a href={mailto}>Send it with your email app instead →</a>
+              </p>
+            )}
+            <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="honeypot" aria-hidden="true" />
           </form>
         </Reveal>
       </div>

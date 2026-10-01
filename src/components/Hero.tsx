@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { GithubFilled, LinkedinFilled, MailFilled, EnvironmentOutlined, DownloadOutlined, ArrowRightOutlined } from '@ant-design/icons'
 import { profile } from '../data/profile'
-import { useTypewriter } from './ui/primitives'
+import { useTypewriter } from './ui/useTypewriter'
 import cvUrl from '../assets/documents/CV_V11.pdf?url'
 
 const container = { hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.2 } } }

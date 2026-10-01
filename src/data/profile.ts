@@ -170,6 +170,19 @@ export const skillGroups = [
 
 export const projects: Project[] = [
   {
+    name: 'QR Flash',
+    tagline: 'ERP & POS Platform',
+    org: 'QrioMatrix',
+    featured: true,
+    summary:
+      'A scalable ERP and POS platform supporting restaurants, textiles, optical, and communication services.',
+    points: [
+      'Contributed to a scalable ERP and POS platform supporting restaurants, textiles, optical, and communication services.',
+      'Integrated serverless backend services using AWS CDK and developed frontend features with Next.js; worked on user management, tax handling, authentication, and role-based access control modules.',
+    ],
+    tech: ['Next.js', 'AWS CDK', 'Serverless', 'RBAC', 'Authentication'],
+  },
+  {
     name: 'Cognito ERP',
     tagline: 'Enterprise Resource Planning System',
     org: 'Soft Detroits',
